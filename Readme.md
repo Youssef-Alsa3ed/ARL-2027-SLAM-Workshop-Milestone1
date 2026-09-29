@@ -303,7 +303,7 @@ For each scenario:
 | Scenario | State Initializer (`x0`) | Initial Covariance (`P0`) | Control Input (`u`) | Measurement (`z`) | Process Noise (`Q`) | Sensor Noise (`R`) |
 |---|---|---|---|---|---|---|
 | **1. Noisy Prediction** | `[0, 0, 10, 5]` | **Pos** = 1.0<br>**Vel** = 1.0 | **Ax** = 2.0<br>**Ay** = 1.0 | `[10.5, 5.2, 9.8, 4.9]` | **Pos** = 0.5<br>**Vel** = 1.0 | **GPS** = 4.0<br>**Speedometer** = 3.0 |
-| **2. Noisy Measurement** | `[0, 0, 10, 5]` | **Pos** = 1.0<br>**Vel** = 1.0 | **Ax** = 2.0<br>**Ay** = 1.0 | `[10.5, 5.2, 9.8, 4.9]` | **Pos** = 0.05<br>**Vel** = 0.1 | **GPS** = 9.0<br>**Speedometer** = 4.0 |
+| **2. Noisy Measurement** | `[0, 0, 10, 5]` | **Pos** = 1.0<br>**Vel** = 1.0 | **Ax** = 2.0<br>**Ay** = 1.0 | `[10.5, 5.2, 12.0, 6.0]` | **Pos** = 0.05<br>**Vel** = 0.1 | **GPS** = 9.0<br>**Speedometer** = 9.0 |
 | **3. GPS Outlier Glitch** | `[0, 0, 10, 5]` | **Pos** = 1.0<br>**Vel** = 1.0 | **Ax** = 2.0<br>**Ay** = 1.0 | `[35.0, 28.0, 10.1, 5.0]` | **Pos** = 0.05<br>**Vel** = 0.1 | **GPS** = 20.0<br>**Speedometer** = 1.0 |
 | **4. Cold Start (Docked)** | `[0, 0, 0, 0]` | **Pos** = 0.01<br>**Vel** = 0.01 | **Ax** = 0.0<br>**Ay** = 0.0 | `[0.01, 0.0, 0.0, 0.0]` | **Pos** = 0.001<br>**Vel** = 0.01 | **GPS** = 0.04<br>**Speedometer** = 0.01 |
 
