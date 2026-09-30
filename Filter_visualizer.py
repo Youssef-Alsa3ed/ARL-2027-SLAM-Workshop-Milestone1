@@ -10,7 +10,7 @@ def gaussian_pdf(x, mean, variance):
 
 
 def plot_1d_gaussians(
-    x_pred, P_pred, z, R, x_upd, P_upd, state_idx=0, label="Position X"
+    x_pred, P_pred, z, R, x_upd, P_upd, state_idx=0, label="Position X", xlabel="meters"
 ):
     """Plots 1D Gaussian distributions for a single state variable slice."""
 
@@ -68,7 +68,7 @@ def plot_1d_gaussians(
         fontweight="bold",
         pad=12,
     )
-    ax.set_xlabel(f"{label} (meters)", fontsize=11)
+    ax.set_xlabel(f"{label} ({xlabel})", fontsize=11)
     ax.set_ylabel("Probability Density f(x)", fontsize=11)
     ax.grid(True, linestyle="--", alpha=0.5)
     ax.legend(loc="upper right", frameon=True, facecolor="white")
